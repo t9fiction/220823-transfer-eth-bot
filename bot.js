@@ -12,6 +12,8 @@ const CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"name","type":"
 
 const CONTRACT_ADDRESS = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
 
+const contract = new Web3.Contract(jsonInterface, address);
+
 const main = async () => {
     const account = web3.eth.accounts.privateKeyToAccount(PRIVATE_KEY);
     const address = account.address;
